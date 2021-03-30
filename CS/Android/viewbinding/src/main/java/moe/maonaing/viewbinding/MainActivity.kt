@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.toFragment.setOnClickListener {
+            val intent = Intent(this, MyFragmentActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 }
