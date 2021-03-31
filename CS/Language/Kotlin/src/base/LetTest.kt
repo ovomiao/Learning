@@ -1,4 +1,4 @@
-package p1_base
+package base
 
 /**
  *      * fun <T, R> T.let(block: (T) -> R): R

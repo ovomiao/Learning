@@ -1,4 +1,4 @@
-package p1_base
+package base
 
 /**
  *      * fun <T, R> with(receiver: T, block: T.() -> R): R
