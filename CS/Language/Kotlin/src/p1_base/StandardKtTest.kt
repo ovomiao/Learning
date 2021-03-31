@@ -80,7 +80,6 @@ fun testApply() {
 }
 
 fun main() {
-
     testWith1()
     testWith2(User("李四", 55))
     testRun()
