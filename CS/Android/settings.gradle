@@ -1,3 +1,5 @@
+include ':jetpack-livedata'
+include ':jetpack-viewmodel'
 include ':viewbinding'
 include ':imageloader'
 include ':jetpack-navigation'
