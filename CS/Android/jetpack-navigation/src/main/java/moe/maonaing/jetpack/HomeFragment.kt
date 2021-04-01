@@ -1,4 +1,4 @@
-package moe.maonaing.jetpack.navigation
+package moe.maonaing.jetpack
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

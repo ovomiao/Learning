@@ -1,4 +1,4 @@
-package moe.maonaing.jetpack.navigation
+package moe.maonaing.jetpack
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import moe.maonaing.jetpack.R
 
 
 /**

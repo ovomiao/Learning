@@ -1,6 +1,6 @@
 include ':viewbinding'
 include ':imageloader'
-include ':jetpack'
+include ':jetpack-navigation'
 include ':kotlinandroid'
 include ':app'
 rootProject.name = "Android"
