@@ -58,6 +58,16 @@ fun testWith2(user: User) {
     println(usr)
 }
 
+/**
+ * * repeat(times: Int, action: (Int) -> Unit)
+ *      * 对 lambda 重复执行 times 次
+ */
+fun testRepeat() {
+    repeat(10) {
+        println("我被重复执行了 10 次 = $it")
+    }
+}
+
 fun testRun() {
     val str = StringBuilder().run {
         append("这是 run()")
@@ -85,6 +95,8 @@ fun main() {
     testRun()
 
     testApply()
+
+    testRepeat()
 
     /**
      * with()、run()、apply() 调用用来简化
