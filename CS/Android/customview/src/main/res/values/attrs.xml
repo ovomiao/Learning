@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClearEditText">
+        <!-- 自定义 View 的 XML 属性 -->
+        <attr name="clear_drawable" format="reference"/>
+    </declare-styleable>
+</resources>

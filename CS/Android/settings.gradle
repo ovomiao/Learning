@@ -1,3 +1,5 @@
+include ':customview'
+include ':videoapp'
 include ':viewpager2'
 include ':mvvm-databinding'
 include ':jetpack-livedata'

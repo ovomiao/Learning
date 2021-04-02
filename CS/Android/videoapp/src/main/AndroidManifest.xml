@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="moe.maonaing.videoapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Android">
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeStyle.Fullscreen"
+            android:name=".videoview.LoginActivity">
+
+        </activity>
+        <!--
+         视频播放是很耗费资源的，可以通过下面的 configChanges 禁用在
+        配置变更时 Activity 重建
+        -->
+        <activity
+            android:name=".videoview.VideoViewActivity"
+            android:theme="@style/AppThemeStyle.Fullscreen"
+            android:configChanges="orientation|screenLayout|screenSize"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
