@@ -10,14 +10,11 @@ import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import moe.maonaing.customview.R
-import moe.maonaing.customview.p1.fragment.ClearEditTextFragment
-import moe.maonaing.customview.p1.fragment.FunctionGraphFragment
-import moe.maonaing.customview.p1.fragment.MaskedFragment
-import moe.maonaing.customview.p1.fragment.SurfaceViewFragment
+import moe.maonaing.customview.p1.fragment.*
 import java.lang.RuntimeException
 
 const val TAG = "P1HomeFragment"
-const val ITEM_SIZE = 4
+const val ITEM_SIZE = 5
 
 class P1HomeFragment : Fragment() {
 
@@ -41,6 +38,7 @@ class P1HomeFragment : Fragment() {
                 1 -> FunctionGraphFragment()
                 2 -> MaskedFragment()
                 3 -> SurfaceViewFragment()
+                4 -> CartesianCardioidFragmentFragment.newInstance()
                 else -> throw RuntimeException("position 越界！")
             }
         }
@@ -56,6 +54,7 @@ class P1HomeFragment : Fragment() {
                 1 -> tab.text = FunctionGraphFragment.TITLE
                 2 -> tab.text = MaskedFragment.TITLE
                 3 -> tab.text = SurfaceViewFragment.TITLE
+                4 -> tab.text = CartesianCardioidFragmentFragment.TITLE
             }
         }.attach()
     }
