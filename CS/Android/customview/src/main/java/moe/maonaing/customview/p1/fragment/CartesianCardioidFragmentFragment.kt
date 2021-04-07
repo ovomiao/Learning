@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import moe.maonaing.customview.R
+import moe.maonaing.customview.p1.view.CartesianCardioidView
 
 
 class CartesianCardioidFragmentFragment : Fragment() {
@@ -14,6 +15,12 @@ class CartesianCardioidFragmentFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_cartesian_cardioid_fragment, container, false)
+    }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        lifecycle.addObserver(view.findViewById<CartesianCardioidView>(R.id.view))
     }
 
     companion object {
