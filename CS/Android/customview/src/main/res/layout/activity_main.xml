@@ -15,4 +15,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <Button
+        android:id="@+id/p2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="to P2" />
+
+    <Button
+        android:id="@+id/p3CircleSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="P3 CircleSurfaceView" />
+
+    <Button
+        android:id="@+id/p3Game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="P3 SurfaceView Game" />
+
 </LinearLayout>

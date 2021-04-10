@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- 这里的 name 可以任意取值，一般是自定义 View 的类名 -->
     <declare-styleable name="ClearEditText">
         <!-- 自定义 View 的 XML 属性 -->
         <attr name="clear_drawable" format="reference"/>
     </declare-styleable>
+
+    <declare-styleable name="MyView">
+        <attr name="testInteger" format="integer"/>
+        <attr name="testDimension" format="dimension"/>
+        <attr name="testEnum">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+        </attr>
+
+        <attr name="testString" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="bar_color" format="color"/>
+        <attr name="bar_radius" format="dimension"/>
+        <attr name="bar_line_width" format="dimension"/>
+         <!-- Android 系统已经提供的属性，可以直接复用 -->
+        <attr name="android:textSize" format="dimension"/>
+        <attr name="android:progress" format="integer"/>
+    </declare-styleable>
+
 </resources>

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import moe.maonaing.viewbinding.databinding.ActivityMainBinding
+import moe.maonaing.viewbinding.rv.RecyclerViewActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -27,6 +28,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.toFragment.setOnClickListener {
             val intent = Intent(this, MyFragmentActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.toRV.setOnClickListener {
+            val intent = Intent(this, RecyclerViewActivity::class.java)
             startActivity(intent)
         }
 

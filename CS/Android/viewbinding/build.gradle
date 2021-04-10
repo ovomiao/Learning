@@ -9,8 +9,15 @@ android {
 
 
     // 启用 ViewBinding
-    viewBinding {
-        enabled true
+    //viewBinding {
+    //    enabled true
+    //}
+    /**
+     * 现在 ViewBinding 和
+     * DataBinding 在这里配置
+     */
+    buildFeatures {
+        viewBinding true
     }
 
 

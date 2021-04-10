@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <changeImageTransform android:duration="500">
+        <!-- targetId 定义需要播放转场动画的 id -->
+        <targets android:targetId="@+id/imageView"/>
+    </changeImageTransform>
+
+    <!-- 淡入淡出 -->
+    <fade android:duration="500">
+        <!-- 取出不需要播放转场动画的 id -->
+        <!-- <targets android:excludeId=""/> -->
+    </fade>
+</transitionSet>

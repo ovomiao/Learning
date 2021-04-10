@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".p2.P2Activity">
+
+    <!--
+        * 这里的 padding 最好分为
+            * View 的 padding，即 android:padding 这种属性
+            * 进度条和文字的 padding，bar_padding
+    -->
+    <moe.maonaing.customview.p2.view.RoundProgressBar
+        android:id="@+id/myView"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="26sp"
+        app:bar_line_width="10dp"
+        app:bar_radius="60dp"
+        app:bar_color="@color/purple_500" />
+
+        <!--
+            * wrap_content 下的 padding 对 View 尺寸的影响
+                * padding 扩大 -> 整个 View 扩大
+            * 固定值下的 padding 对 View 尺寸的影响
+                * 固定高度包括两种情况：
+                    * 显示设定固定值，例如 50dp
+                    * match_parent，父 View 测量出的尺寸，其实
+                      也是固定值
+                * padding 扩大，View 尺寸不变
+            * 无尺寸限制的 View 下，padding 的变化情况
+                * 在尺寸限制的方向，padding 的扩大会导致 View 在那个方向
+                  无限扩大，例如 ScrollView 中的 View 加大 padding 会导致
+                  子 View 的 height 无限扩大
+        -->
+
+
+</FrameLayout>

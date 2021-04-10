@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Android">
-        <activity android:name=".MyFragmentActivity"></activity>
+        <activity android:name=".rv.RecyclerViewActivity"></activity>
+        <activity android:name=".MyFragmentActivity" />
         <activity android:name=".JavaMainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
