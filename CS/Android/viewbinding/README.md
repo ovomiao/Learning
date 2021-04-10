@@ -32,10 +32,22 @@
 * **启用 ViewBinding**
 
   * ```groovy
+    // 4.0 之前的版本
+    android {
+        viewBinding {
+            enabled true
+        }
+        //dataBinding {
+        //    enabled true
+        //}
+    }
+    
     //app/build.gradle
+    // Android Studio 4.0 开始的配置
     android {
         buildFeatures {
             viewBinding true
+            // dataBinding true -> DataBinding 也是在这里配置
         }
     }
     ```

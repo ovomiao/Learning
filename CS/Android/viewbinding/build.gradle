@@ -9,15 +9,23 @@ android {
 
 
     // 启用 ViewBinding
+    // * 4.0 之前的版本
     //viewBinding {
     //    enabled true
     //}
+    //
+    // dataBinding {
+    //      enabled true
+    // }
+    //
     /**
      * 现在 ViewBinding 和
      * DataBinding 在这里配置
+     * 4.0 开始的版本
      */
     buildFeatures {
         viewBinding true
+        //dataBinding true
     }
 
 
@@ -26,7 +34,7 @@ android {
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
-        versionName "1.0"
+        versionNae "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
