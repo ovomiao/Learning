@@ -1,4 +1,4 @@
-[Jetpack - Lifecycles 让自己的类感知 Activity/Fragment 的声明周期]([Learning/CS/Android/ui-bottom-navigation-view at main · ovomiao/Learning (github.com)](https://github.com/ovomiao/Learning/tree/main/CS/Android/jetpack-lifecyclers/src/main/java/moe/maoniang/jetpack_lifecycles/))
+[Jetpack - Lifecycles 让自己的类感知 Activity/Fragment 的声明周期](https://github.com/ovomiao/Learning/tree/main/CS/Android/jetpack-lifecycles/src/main/java/moe/maonaing/jetpack_lifecycles)
 
 **【注意事项】**
 
