@@ -1,3 +1,4 @@
+include ':jetpack-lifecycles'
 include ':ui-bottom-navigation-view'
 include ':animation'
 include ':network'
